@@ -1,0 +1,4 @@
+*.bwdevice binary
+*.bwmodulator binary
+*.bwmodule binary
+*.png binary
