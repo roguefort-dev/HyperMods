@@ -2,11 +2,11 @@
 
 Native Bitwig Studio devices, published for [Patchbay Launcher](https://github.com/arius77R/patchbay-launcher).
 
-**Beta.** HyperBlur has not been tested in a running Bitwig Studio yet.
+**Beta.** The device loads in Bitwig Studio 6.1.7. Its panel, with the kernel preview, is new and has not been seen in Bitwig yet.
 
 | Device | Type | What it does |
 | --- | --- | --- |
-| [HyperBlur](Bitwig-6.1.7/HyperBlur.bwdevice) | Audio FX | A centred blur with Gaussian, Kawase, Disc and Bokeh kernels and feedback, ported from the HyperBlur plug-in. This build has no sidechain yet, so its Signal Kernel model passes the dry signal. |
+| [HyperBlur](Bitwig-6.1.7/HyperBlur.bwdevice) | Audio FX | A centred blur with Gaussian, Kawase, Disc and Bokeh kernels and feedback, with a preview of the kernel, ported from the HyperBlur plug-in. This build has no sidechain yet, so its Signal Kernel model passes the dry signal. |
 
 ## Install
 
