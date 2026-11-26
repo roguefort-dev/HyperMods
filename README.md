@@ -6,7 +6,7 @@ Native Bitwig Studio devices, published for [Patchbay Launcher](https://github.c
 
 | Device | Type | What it does |
 | --- | --- | --- |
-| [HyperBlur](Bitwig-6.1.7/HyperBlur.bwdevice) | Audio FX | A centred blur with Gaussian, Kawase, Disc and Bokeh kernels and feedback, with a preview of the kernel, ported from the HyperBlur plug-in. Its latency follows the kernel, from 1 sample to what it needs, where the plug-in is always 4098 samples late. This build has no sidechain yet, so its Signal Kernel model passes the dry signal. |
+| [HyperBlur](Bitwig-6.1.7/HyperBlur.bwdevice) | Audio FX | A centred blur with Gaussian, Kawase, Disc and Bokeh kernels and feedback, with a preview of the kernel, ported from the HyperBlur plug-in. Its radius reaches 500 ms, and 5 s at every sample rate with ×10. Its latency follows the kernel, from 1 sample to what it needs, where the plug-in is always 4098 samples late. This build has no sidechain yet, so its Signal Kernel model passes the dry signal. |
 
 ## Install
 
