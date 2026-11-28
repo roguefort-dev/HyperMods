@@ -2,11 +2,13 @@
 
 Native Bitwig Studio devices, published for [Patchbay Launcher](https://github.com/arius77R/patchbay-launcher).
 
-**Beta.** The first build of HyperBlur loads in Bitwig Studio 6.1.7 and its panel shows there. This build is new: a latency that follows the kernel, a radius to 500 ms and, with ×10, to 5 s, a narrower panel. It has not been loaded in Bitwig yet.
-
 | Device | Type | What it does |
 | --- | --- | --- |
-| [HyperBlur](Bitwig-6.1.7/HyperBlur.bwdevice) | Audio FX | A centred blur with Gaussian, Kawase, Disc and Bokeh kernels and feedback, with a preview of the kernel, ported from the HyperBlur plug-in. Its radius reaches 500 ms, and 5 s at every sample rate with ×10. Its latency follows the kernel, from 1 sample to what it needs, where the plug-in is always 4098 samples late. This build has no sidechain yet, so its Signal Kernel model passes the dry signal. |
+| [HyperBlur](Bitwig-6.1.7/HyperBlur.bwdevice) | Audio FX | Centred blur with up to 256 weighted taps, a five-second Radius, tap randomization and inversion, and a native FB FX chain. |
+
+HyperBlur offers Standard, Zero Latency, and No Pre Taps modes. Mix defaults to
+100% wet. Internal feedback returns on the next sample. Devices in FB FX use
+Bitwig's native feedback bridge.
 
 ## Install
 
@@ -14,4 +16,4 @@ In Patchbay Launcher: **Sources**, the **Devices** tab, **+ Add**, type `roguefo
 
 By hand: in Patchbay's window, add this repository's `Bitwig-6.1.7` folder under **Tools > Device Folders**.
 
-The device is for Bitwig Studio 6.1.7 and later. Its output is as late as its kernel needs (69 samples for the default one) and it tells Bitwig whenever that changes.
+The device is for Bitwig Studio 6.1.7 and later. Reinsert HyperBlur in an existing project to load a new build.
